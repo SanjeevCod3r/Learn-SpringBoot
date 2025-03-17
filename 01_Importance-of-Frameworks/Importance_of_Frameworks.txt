@@ -1,0 +1,11 @@
+Spring Boot:
+
+Develop Project -> Programing Language + Framework
+
+Framework: Rapid Development
+-> Framework are always built top of existing programing language.
+
+Framework:
+-> Ready made Solution
+-> Advanced Solution over the Programing Language.
+-> Provide Solution to existing Problems of a Programing Language
