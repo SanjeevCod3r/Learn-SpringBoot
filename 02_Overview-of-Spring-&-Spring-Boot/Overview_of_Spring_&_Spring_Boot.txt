@@ -1,0 +1,11 @@
+Spring and SpringBoot:
+
+Micro Services:
+-> Small Services : Please make sure every functionlity as a individual application.
+
+SpringBoot = Spring + Additional Feature
+
+-> Spring is more compatiable with Micro Services Architecture.
+
+
+Micro Services: Not a frmework, this a architecture of building an application. 
