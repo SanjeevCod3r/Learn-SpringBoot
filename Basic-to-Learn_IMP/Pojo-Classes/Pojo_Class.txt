@@ -1,0 +1,19 @@
+Pojo Class:
+-----------
+
+POJO: Plain Old Java Object
+
+-> Class Should be Simple and Plain
+
+We Achive:
+-> Simplicity
+-> Flexibility
+-> Readability
+-> Re-Usebility
+
+Rules: Pojo Class ---->
+1. Class Should not extend any other pre-defined Classes.
+2. Class Should not implement any pre-defined Interface.
+3. Class Should contain a default constructor.
+4. May maintain args constructor
+5. Encapsulation: Variable Declare alaways as Private (getter and setter)
