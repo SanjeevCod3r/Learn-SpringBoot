@@ -1,0 +1,32 @@
+What We Learn: Spring Boot FrameWork
+
+-> Core Module (Most Important)
+-> Spring JDBC 
+-> JPA/ORM : Module (Real Time)
+-> Web/MVC Module (Real Time)
+-> Security Module
+-> Actuators
+-> Profiles
+-> Logging
+-> Project Build : Maven
+ 
+
+Core Module : What We Learn
+
+=> As Part of Core Module, Spring FrameWork explaining How Spring FrameWork is Desigined and How internally it will behave
+      -> Principal they used in Spring FrameWork
+      -> Design Pattern they are following on Spring FrameWork
+      -> Advantages of Spring FrameWork
+      -> Basic and Fundamentals of Spring FrameWork
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Core Module:
+----------- 
+-> Spring FrameWork is providing a feature called as Dependency Injection.
+-> Spring FrameWork is going to take Care of Object Creation/Configuration/Management of instances.
+
+Dependency Injection:
+---------------------
+   Dependency + Injection
+-> One Object injected to another Object, done by Spring frmework.
