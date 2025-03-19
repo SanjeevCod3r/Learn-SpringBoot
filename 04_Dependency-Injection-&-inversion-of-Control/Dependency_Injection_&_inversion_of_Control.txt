@@ -1,0 +1,47 @@
+IOC(Inversion of Control) Principal :
+Spring Framework is build with one of the Principal called IOC.
+
+The IoC (Inversion of Control) principle is a design pattern that reverses the flow of control in an application. 
+Instead of objects controlling their dependencies, 
+the control is handed over to a container or framework (in this case, Spring’s IoC Container).
+
+
+Dependency Injection (DI):
+DI is one of the most common techniques to achive IoC.
+In DI, an objects dependencies are injected into it by an external entity rather than the object creating its own dependencies.
+
+<--------------------------------------------------------------------------------------------------------------------------------->
+<--------------------------------------------------------------------------------------------------------------------------------->
+
+Creating Spring Application:
+-----------------------------
+-> No Need to install any Software in Computer.
+Spring Framework -> Always comes a group of JAR Files
+
+JAR File:
+---------
+Java Archive File / Compressing / Zip
+
+
+Spring 2003: Version 1
+Spring 2024 : Spring 6
+
+1. Get Spring File
+2. Create java project
+3. Identify Spring jar Files which are asscoiated to Spring Core Module
+            spring-beans-5.3.9
+			spring-context-5.3.9
+			spring-core-5.3.9
+			spring-expression-5.3.9
+4. Setup class path/build path of the jar File from step 3.
+
+Right click on project -> Build path -> Configure build path -> libraries -> select class path 
+->  Spring Project setup complted. 
+
+
+Once classes are created, then we have to provide Class information to Spring Framework
+Configuration of infromation -> Spring Framework -> Class -> Creating Object. 
+
+100 % spring Framework coding is start.
+
+    
