@@ -1,0 +1,10 @@
+XML (Extensible Markup Language):
+---------------------------------
+XML (Extensible Markup Language) is a markup language used to store and transport data in a structured format. 
+It is both human-readable and machine-readable.
+
+Q. What is XML?
+-> XML is not a programming language, but a markup language like HTML.
+-> It is used to store, organize, and exchange data between different systems.
+-> XML is extensible, meaning users can define their own tags.
+-> It follows a tree structure with a hierarchical organization.
