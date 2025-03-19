@@ -1,0 +1,51 @@
+Annotations in Java
+-------------------
+
+Annotations in Java provide metadata about the code and do not directly impact program logic. 
+They are used to give instructions to the compiler, frameworks, or runtime environments.
+
+Java provides several built-in annotations:
+
+1. @Override
+-> Ensures that a method overrides a superclass method.
+
+class Parent {
+    void show() {
+        System.out.println("Parent method");
+    }
+}
+
+class Child extends Parent {
+    @Override
+    void show() { // Correctly overriding
+        System.out.println("Child method");
+    }
+}
+
+
+2. @Deprecated
+-> Marks a method or class as deprecated.
+
+class Example {
+    @Deprecated
+    void oldMethod() {
+        System.out.println("This method is deprecated.");
+    }
+}
+
+
+3. @SuppressWarnings
+-> Suppresses specific compiler warnings.
+
+@SuppressWarnings("unchecked")
+List rawList = new ArrayList(); // No generic type warning
+
+
+4. @FunctionalInterface
+-> Ensures an interface has only one abstract method.
+
+@FunctionalInterface
+interface MyFunctionalInterface {
+    void myMethod();
+}
+
