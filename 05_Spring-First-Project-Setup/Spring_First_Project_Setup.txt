@@ -1,0 +1,80 @@
+Spring Bean:
+------------
+An Object which is created by Spring Container is called as Spring Bean.
+
+A Class -->
+-> A a1 = new A();
+-> A -> Spring Framework -> XML -> a2;
+ 
+2 Object:
+a1 -> Not a Spring Bean
+a2 -> Bean
+
+-------------------------------------------------------------------------------------------------->
+
+In Spring, 
+Spring Framework a XML tag : 
+<bean> : by using child tag of <bean.. >, we are configuring java classes. 
+
+We have to configure 2 attributes of <bean>
+		-> id  : Object Name 
+		-> class  :  Class Name : <Fully Qualified Class Name> : including package name
+
+-> FQCN :  packagename.className (com.Sanjeev.Address)
+		 	 	
+
+---------------------------------------------------------------------------------------------------->
+
+Passing XML to Spring IOC Container
+1. Spring IOC Container
+Spring manages objects (beans) using the IOC (Inversion of Control) Container, which can be created using:
+
+-> BeanFactory (lightweight, basic DI)
+-> ApplicationContext (advanced, recommended)
+
+
+2. Creating a Container with ApplicationContext
+Since ApplicationContext is an interface, we use its implementation class FileSystemXmlApplicationContext to load an XML configuration file.
+
+
+Example: CollegeApplication Class
+-------------------------------------------------------------------------------------------------
+package com.sanjeev;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
+
+public class CollegeApplication {
+
+    public static void main(String[] args) {
+    	
+    	// Create Container Object and then you can pass XML file location to Container
+    	
+    	// File to Path Container
+    	
+        ApplicationContext container = new FileSystemXmlApplicationContext("C:\\Users\\SANJE\\eclipse-workspace\\spring-first-application\\spring.xml");
+
+        // Pass the Bean Id
+       Object obj =  container.getBean("address1");
+       
+       Address a1 = (Address)obj;
+       
+       a1.printMyAddress();
+        
+        
+    }
+}
+--------------------------------------------------------------------------------------------------------------
+
+Example: Bean (XML)
+
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="address1" class="com.sanjeev.Address"> </bean>
+
+</beans>
