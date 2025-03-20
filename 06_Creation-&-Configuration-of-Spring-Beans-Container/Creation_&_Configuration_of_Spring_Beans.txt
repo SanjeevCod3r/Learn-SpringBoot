@@ -1,0 +1,20 @@
+Object Creation and Initialization in Java:
+When an object is created in Java, all instance variables are immediately initialized with their default values.
+
+Spring Beans - Frequently Asked Questions
+--------------------------------------------
+🔹 Q: Can we define multiple classes in the beans XML file?
+✅ Yes, we can define any number of classes in the Spring beans.xml configuration file.
+
+🔹 Q: Can I create multiple objects for the same class (e.g., Address class)?
+✅ Yes, Spring allows creating multiple objects for the same class. However, each object must have a unique bean ID.
+
+🔹 Q: What happens if I define the same bean ID more than once?
+❌ It will throw an exception because duplicate bean IDs are not allowed.
+
+🔹 Q: What happens if I reference a bean ID that is not configured in the XML file?
+❌ An exception will be thrown at runtime:
+Exception in thread "main" org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'address3' available
+
+🔹 Q: What happens if I provide an incorrect class name in the XML file?
+❌ It will result in an exception due to the missing or incorrect class definition.
