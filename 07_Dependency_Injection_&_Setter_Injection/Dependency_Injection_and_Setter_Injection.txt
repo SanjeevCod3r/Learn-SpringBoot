@@ -1,0 +1,70 @@
+Q. How to Configure Instance Variable Values for Each Object in Spring?
+-> In Spring, values for instance variables can be configured using Dependency Injection (DI).
+-> When an object is created by the Spring Container, the values are set automatically.
+-> This can be done using Setter Injection, Constructor Injection, or Field Injection.
+
+Q. Ways to Inject Dependencies in Spring
+XML-based Configuration:
+-> Setter Injection (Using <property> in XML)
+-> Constructor Injection (Using <constructor-arg> in XML)
+-> Field Injection (Less common in XML, mainly used in annotations)
+
+Annotation-based Configuration:
+-> @Autowired (for Field Injection)
+-> @Autowired + Setter method (for Setter Injection)
+-> @Autowired + Constructor (for Constructor Injection)
+
+Q. Understanding Setter Injection
+Definition: Spring injects values via setter methods.
+Process:
+-> The Spring container checks if a setter method exists for the property.
+-> If the setter method exists, the value is passed to the method.
+-> The property gets assigned.
+
+Example:
+(XML Configuration) ->
+{
+<bean id="e1" class="com.dilip.it.Employee">
+    <property name="empId" value="100"/>
+    <property name="empName" value="Dilip"/>
+</bean>
+
+<bean id="e2" class="com.dilip.it.Employee">
+    <property name="empId" value="150"/>
+    <property name="empName" value="Suresh"/>
+</bean>
+}
+
+Java Class ->
+{
+    public class Employee {
+    private int empId;
+    private String empName;
+
+    public void setEmpId(int empId) {
+        this.empId = empId;
+    }
+
+    public void setEmpName(String empName) {
+        this.empName = empName;
+    }
+}
+
+}
+
+-------------------------------------------------------------------------------------------->
+
+Types of Dependency Injection (DI) in XML Configuration:
+In Spring XML configuration, there are three main types of Dependency Injection (DI):
+
+Setter Injection:
+-> Spring injects values into the bean properties using setter methods.
+-> Uses the <property> tag in XML.
+
+Constructor Injection:
+-> Spring injects values into the bean properties using constructor parameters.
+-> Uses the <constructor-arg> tag in XML.
+
+Field Injection (Not common in XML, mainly used in annotations):
+-> Directly injects values into fields.
+-> Mainly used in annotations (@Autowired), but possible in XML using p-namespace.
