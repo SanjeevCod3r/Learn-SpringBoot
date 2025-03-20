@@ -1,0 +1,13 @@
+Constructor -->
+-> is a block(similar to method) having same name as that of class name
+-> does not have any return-type, not even void.
+-> The only modifiers applicable for Constructor are public, protected, default and private
+-> It executes automatically when we create an object.
+
+Use Of Constructor:
+Constructor is used to initilize an object
+
+Types of Constructor:
+1. Default Constructor (no-arg constructor) -> Create By Compiler 
+2. No-arg Constructor (User-defined) -> Create by Programmer
+3. Parameterized Constructor -> Create by Programmer
