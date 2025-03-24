@@ -1,0 +1,71 @@
+Q. What are private variables in Java?
+-> Private variables are variables declared with the private access modifier, 
+meaning they cannot be accessed directly outside their class.
+
+Q. How do we access and modify private variables?
+-> We use getter and setter methods
+{
+    private int age;  
+public void setAge(int age) {  
+    this.age = age;  
+    }  
+public int getAge() {  
+    return age;  
+    }  
+}
+
+Q. What is the difference between a primitive type and a wrapper class?
+-> A primitive type holds simple values (int, char, etc.).
+-> A wrapper class (e.g., Integer, Character) provides an object representation of primitive types.
+
+Collections in Java
+--------------------
+
+List<?>
+--------
+Q. What is a List in Java?
+-> List<?> allows duplicate values and stores multiple values in a single property.
+
+Q. How do we inject values into a List using XML configuration?
+{
+<list>
+    <value>iphone16</value>
+    <value>iphone16 pro</value>
+</list>
+}
+
+Set<?>
+------
+Q. What is a Set in Java?
+-> A Set<?> does not allow duplicate values and stores multiple values in a single property.
+
+Q. How do we inject values into a Set using XML configuration?
+{
+<set>
+    <value>iphone16</value>
+    <value>iphone16 pro</value>
+</set>
+}
+
+Map<?, ?>
+----------
+Q. What is a Map<?, ?> in Java?
+-> A Map<?, ?> stores data in key-value pairs.
+
+Q. How do we inject key-value pairs into a Map using XML configuration ?
+{
+<map>
+    <entry key="iphone15" value="100000" />
+    <entry key="iphone15pro" value="120000"/>
+    <entry key="iphone16" value="130000"/>
+</map>
+}
+
+Q. Can a Map allow duplicate keys?
+-> No, Map does not allow duplicate keys. If a duplicate key is added, the latest value overrides the previous one.
+
+Object Creation
+----------------
+Q. What is special about the new operator in Spring?
+-> The new operator is not used to create objects manually in Spring. Spring automatically injects dependencies 
+without needing to call setter methods manually.  
