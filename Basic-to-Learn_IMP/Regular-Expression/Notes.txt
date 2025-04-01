@@ -1,0 +1,20 @@
+Regular Expression in Java:
+-> Regex is a powerful tool in Java for defining patterns that can be used for Searching, manipulating, and editing strings.
+
+-> java.util.regex package defined classes to work with regex in java.
+
+-> Pattern Class ---> The Pattern class is used to compile a regex pattern.
+-> Matcher Class ---> The Matcher class is used to search and find matches in a given string.
+
+-> (PatternSyntaxException) --> PatternSyntaxException is an unchecked exception (runtime exception) that occurs 
+when there is an error in the syntax of a regular expression in Java.
+It is part of the java.util.regex package and is thrown when a regex pattern is invalid while being compiled using Pattern.compile()
+
+-> MatchResult Interface
+The MatchResult interface provides methods to retrieve the results of a regex match without modifying the state of the matcher.
+
+
+Use Of Regex:
+-> Validating user input (e.g. email addresses, passwords).
+-> Extracting specific information from text (e.g. phone number, dates).
+-> Searching and replacing text based on Pattern.

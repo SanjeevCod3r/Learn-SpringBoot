@@ -1,0 +1,9 @@
+Stream:
+In Java, Stream API (introduced in Java 8) is used to process collections (like Lists, Sets, Maps) in a functional style. 
+It allows operations such as filtering, mapping, and reducing data with less code and better performance.
+
+Key Features of Streams:
+✅ Functional Programming → Uses lambda expressions.
+✅ Lazy Execution → Operations are executed only when needed.
+✅ Parallel Processing → Supports parallel streams for faster execution.
+✅ No Modification → Streams don’t modify the original data.
