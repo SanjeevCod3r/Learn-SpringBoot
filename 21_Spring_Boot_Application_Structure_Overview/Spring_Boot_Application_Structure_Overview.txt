@@ -1,0 +1,43 @@
+Spring Boot Application Folder Structure:
+
+🔥 @SpringBootApplication = Combination of 3 Annotations
+-> @ComponentScan – Scans for components (like @Component, @Service, @Repository, @Controller) in the base package and its sub-packages.
+-> @Configuration – Marks the class as a source of bean definitions.
+-> @EnableAutoConfiguration – Enables Spring Boot's auto-configuration mechanism based on dependencies in the classpath.
+
+
+🚀 Spring Boot Starters------>
+What is a Starter?
+A starter is a pre-defined set of dependencies grouped together to simplify Maven/Gradle configuration.
+
+Main Starter:
+-> spring-boot-starter
+This is the core starter that includes basic dependencies required for any Spring Boot app.
+
+Examples:
+-> spring-boot-starter-web
+-> spring-boot-starter-data-jpa
+-> spring-boot-starter-security
+
+------------------------------------------------------------------------------>
+
+🌱 Spring Application:
+🧾 Bean Object Creation using Annotations:
+1. Mark Class with @Component:
+-> Identify and mark the class (e.g., Student) as a Spring-managed component.
+2. Create a @Configuration Class:
+-> This class is used to define bean configurations explicitly and enables component scanning.
+3. Use @ComponentScan:
+-> This annotation tells Spring where to look for component classes.
+4. Specify Base Package in @ComponentScan:
+-> Provide the base package name (e.g., com.*) to scan for annotated components.
+-> Example: Package like com.apple will be scanned.
+5. Register Configuration Class with Spring Container:
+-> Inform the Spring container about the configuration class to initialize the context and manage beans.
+
+
+🚀 Spring Boot
+1. Mark Class as Component:
+-> Annotate main or necessary classes with component-related annotations like @Component, @Service, @Repository, etc.
+2. Start the Spring Boot Application:
+-> Use Spring Boot’s auto-configuration and embedded server by launching the application through the main class.
