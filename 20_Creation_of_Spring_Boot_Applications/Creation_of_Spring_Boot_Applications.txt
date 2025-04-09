@@ -1,0 +1,80 @@
+Spring Boot Application:
+------------------------
+
+
+🔍 Why Spring Boot?
+Traditional Spring Application Setup is complex:
+-> Manual collection of required JAR files
+-> Managing compatibility versions
+-> Configuration overhead (XMLs, Java config)
+
+✅ Spring Boot simplifies this with:
+-> Auto-configuration
+-> Embedded server (Tomcat/Jetty)
+-> Pre-configured starter dependencies
+-> Easy setup via Spring Initializr or STS
+
+
+Ways to Create SpringBoot Project:-->
+
+🌐 1. Creating Spring Boot Project – via Spring Initializr (Online Tool)
+✅ Steps:
+1. Go to: https://start.spring.io
+2. Fill project metadata:
+-> Project: Maven/Gradle
+-> Language: Java
+-> Spring Boot Version (Recommended stable version)
+-> Group ID, Artifact ID, Name, Description
+-> Packaging: Jar/War
+-> Java Version
+3. Add Dependencies (e.g., Spring Web, JPA, Thymeleaf, etc.)
+4. Click on Generate
+5. A ZIP file will be downloaded.
+6. Extract the ZIP.
+7. Open Eclipse:
+-> File -> Import -> Maven -> Existing Maven Project
+-> Select the root folder (contains pom.xml)
+-> Click Finish
+🚀 Your project is ready. Start coding inside the main application class!
+
+💡 Notes:
+-> By default, Spring Boot comes with core modules.
+-> All required JARs are auto-included via Spring Boot Starter dependencies.
+-> Includes support for:
+        -> Logging: log4j.jar / slf4j
+        -> Unit testing: junit.jar
+        -> Auto-configuration support
+
+
+🧰 2. Creating Spring Boot Project via STS Plugin in Eclipse
+Steps:
+1. Install STS Plugin:
+-> Go to: https://marketplace.eclipse.org/content/spring-tools-4-aka-spring-tool-suite-4
+-> Install in Eclipse
+-> Restart Eclipse after installation
+
+2. Create Spring Boot App:
+-> File -> New -> Project -> Spring Boot -> Spring Starter Project
+-> Fill project details
+-> Select dependencies
+-> Finish
+🧩 Project is auto-configured and ready for development.
+
+
+🖥️ 3. Using STS IDE (Spring Tool Suite)
+What is STS?
+-> A customized version of Eclipse built for Spring development.
+Combines:
+-> Eclipse IDE
+-> Spring Boot support
+-> Embedded wizards for quick project creation
+Steps:
+1. Download STS:
+-> Spring Tool Suite Download Link (https://cdn.spring.io/spring-tools/release/STS4/4.26.0.RELEASE/dist/e4.33/spring-tool-suite-4-4.26.0.RELEASE-e4.33.0-win32.win32.x86_64.zip)
+2. Extract the ZIP
+3.Launch STS (same UI as Eclipse)
+4.Create a Project:
+-> File -> New -> Spring Starter Project
+-> Enter project details, dependencies
+-> Click Finish
+✅ Project is set up and ready.
